@@ -1,0 +1,36 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/images/condos"
+public_folder: "/images/condos"
+
+collections:
+  - name: "condos"
+    label: "Condos"
+    label_singular: "Condo"
+    folder: "src/data/condos"
+    create: true
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    fields:
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Slug (URL)", name: "slug", widget: "string", hint: "URL-friendly name (e.g., seaholm-residences)"}
+      - {label: "Address", name: "address", widget: "string"}
+      - {label: "City", name: "city", widget: "string", default: "Austin"}
+      - {label: "State", name: "state", widget: "string", default: "TX"}
+      - {label: "Zip Code", name: "zip", widget: "string"}
+      - {label: "Year Built", name: "yearBuilt", widget: "number", value_type: "int"}
+      - {label: "Number of Floors", name: "floors", widget: "number", value_type: "int"}
+      - {label: "Total Residences", name: "totalResidences", widget: "number", value_type: "int"}
+      - {label: "Architect", name: "architect", widget: "string", required: false}
+      - {label: "Developer", name: "developer", widget: "string", required: false}
+      - {label: "Hero Image", name: "heroImage", widget: "image"}
+      - {label: "Gallery Images", name: "galleryImages", widget: "list", field: {label: "Image", name: "image", widget: "image"}}
+      - {label: "Floor Plans", name: "floorPlans", widget: "list", field: {label: "Floor Plan", name: "plan", widget: "image"}}
+      - {label: "Video URL", name: "videoUrl", widget: "string", required: false, hint: "YouTube or Vimeo URL"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Amenities", name: "amenities", widget: "list"}
+      - {label: "Meta Description (SEO)", name: "metaDescription", widget: "string"}
+      - {label: "Keywords (SEO)", name: "keywords", widget: "list"}
