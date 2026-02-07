@@ -53,11 +53,11 @@ export default async function CondoPage({ params }: PageProps) {
       <section className="py-6 bg-gray-50">
         <div className="container mx-auto px-4 lg:px-8">
           <nav className="text-sm text-black/50">
-            <a href="/" className="hover:text-black transition-colors">
+            <a href="/condos/" className="hover:text-black transition-colors">
               Home
             </a>
             {' '}/{' '}
-            <a href="/#" className="hover:text-black transition-colors">
+            <a href="/condos/" className="hover:text-black transition-colors">
               Condos
             </a>
             {' '}/{' '}

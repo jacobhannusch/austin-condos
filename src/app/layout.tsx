@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 export const metadata: Metadata = {
   title: 'Austin Condos | Downtown High-Rise Living',
   description: 'Explore luxury high-rise condos in downtown Austin. Find your perfect home among the best buildings in the city.',
+  metadataBase: new URL('https://jacobinaustin.com/condos'),
 };
 
 export default function RootLayout({

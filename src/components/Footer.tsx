@@ -17,10 +17,10 @@ export default function Footer() {
           <div>
             <h4 className="text-sm font-medium mb-4">Quick Links</h4>
             <nav className="flex flex-col space-y-2">
-              <a href="/" className="text-sm text-white/70 hover:text-white transition-colors">
+              <a href="/condos/" className="text-sm text-white/70 hover:text-white transition-colors">
                 All Condos
               </a>
-              <a href="/#contact" className="text-sm text-white/70 hover:text-white transition-colors">
+              <a href="/condos/#contact" className="text-sm text-white/70 hover:text-white transition-colors">
                 Contact
               </a>
             </nav>

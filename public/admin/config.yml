@@ -3,7 +3,7 @@ backend:
   branch: main
 
 media_folder: "public/images/condos"
-public_folder: "/images/condos"
+public_folder: "/condos/images/condos"
 
 collections:
   - name: "condos"
